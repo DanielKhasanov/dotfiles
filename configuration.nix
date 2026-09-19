@@ -36,6 +36,8 @@
     onActivation.extraFlags = [ "--force" ];
     brews = [
       "herdr"
+      "node"
+      "gh"
     ];
     casks = [
       "wezterm"
