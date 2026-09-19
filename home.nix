@@ -16,6 +16,7 @@ in
     jq        # json on the command line
     lazygit
     neovim
+    tmux
     # the font everything renders in
     nerd-fonts.hack
   ];
@@ -58,6 +59,8 @@ in
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/wezterm";
   home.file.".config/nvim".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/nvim";
+  home.file.".config/tmux".source =
+    config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/tmux";
   home.file.".config/herdr".source =
     config.lib.file.mkOutOfStoreSymlink "${dotfiles}/home/.config/herdr";
   home.file.".claude/settings.json".source =
